@@ -1,6 +1,6 @@
 # Treinamento para Maratona de Programação 2015 - Unifesp
 
-Códigos dos problemas resolvidos no treinamento para a maratona de programação 2015.
+Códigos dos problemas resolvidos no treinamento da Unifesp para a maratona de programação 2015.
 
 Cada problema é representado por uma pasta (diretório). Caso queira colocar referências de um determinado problema, basta criar uma pasta (se não houver) dentro da pasta do problema com o nome "referencias".
 
