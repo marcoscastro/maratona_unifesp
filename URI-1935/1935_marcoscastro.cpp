@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 int main(int argc, char *argv[])
 {
@@ -7,13 +6,13 @@ int main(int argc, char *argv[])
 
 	scanf("%lld %lld", &N, &B);
 
-	// busca binária para encontrar o X
+	// busca binÃ¡ria para encontrar o X
 	long long int ini = 0, fim = N / 2, meio, X = 0;
 
 	/*
-	    busca binária para encontrar o maior valor possível
-	    de X que satisfaça a inequação: 4*X*(N - X) < B
-	    o X é o valor da caixa anteior à casca certa
+	    busca binÃ¡ria para encontrar o maior valor possÃ­vel
+	    de X que satisfaÃ§a a inequaÃ§Ã£o: 4*X*(N - X) < B
+	    o X Ã© o valor da caixa anteior Ã  casca certa
 	*/
 	while (ini <= fim)
 	{
@@ -33,7 +32,7 @@ int main(int argc, char *argv[])
 	long long int coordX = casca, coordY = casca;
 	long long int resto;
 
-	// tenta colocar a maior qte. possível na primeira linha
+	// tenta colocar a maior qte. possÃ­vel na primeira linha
 	if(resto_feijoes >= lim)
 	{
 		resto_feijoes -= lim;
@@ -48,7 +47,7 @@ int main(int argc, char *argv[])
 	
 	if(resto_feijoes > 0)
 	{
-		// tenta colocar a maior qte. possível na primeira coluna
+		// tenta colocar a maior qte. possÃ­vel na primeira coluna
 		if(resto_feijoes >= lim - 1)
 		{
 			resto_feijoes -= (lim - 1);
@@ -61,7 +60,7 @@ int main(int argc, char *argv[])
 			resto_feijoes -= resto;
 		}
 
-		// tenta colocar a maior qte. possível na segunda linha
+		// tenta colocar a maior qte. possÃ­vel na segunda linha
 		if(resto_feijoes > 0)
 		{
 			if(resto_feijoes >= lim - 1)
@@ -76,7 +75,7 @@ int main(int argc, char *argv[])
 				resto_feijoes -= resto;
 			}
 			
-			// tenta colocar a maior qte. possível na segunda coluna
+			// tenta colocar a maior qte. possÃ­vel na segunda coluna
 			if(resto_feijoes > 0)
 				coordX -= resto_feijoes;
 		}
